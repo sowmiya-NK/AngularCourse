@@ -1,0 +1,13 @@
+<p>receipe works!</p>
+<div class="row">
+  <div class="col-md-5">
+    <app-receipe-list></app-receipe-list>
+  </div>
+  <div class="col-md-7">
+    <app-receipe-description
+      *ngIf="selectedReceipe; else infotext"
+      [receipe]="selectedReceipe"
+    ></app-receipe-description>
+    <ng-template #infotext><p>please select a receipe!!</p></ng-template>
+  </div>
+</div>

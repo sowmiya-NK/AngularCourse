@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <button class="btn btn-success">New receipe</button>
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class="col-xs-12">
+    <app-receipe-items
+      *ngFor="let r of receipe"
+      [receipe]="r"
+    ></app-receipe-items>
+  </div>
+</div>
